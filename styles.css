@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(135deg, #ff66cc, #9966ff);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+h1, p, button {
+  text-align: center;
+}
+
+button {
+  background-color: #ff66cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff99dd;
+}
+
+img.mascot {
+  width: 200px;
+  image-rendering: pixelated;
+}
