@@ -11,10 +11,9 @@ let correct = 0;
 
 const root = document.getElementById("root");
 
-const mascot = document.createElement("img");
-mascot.src = "mascot.gif";
-mascot.className = "mascot";
-root.appendChild(mascot);
+const stars = document.createElement("div");
+stars.className = "stars";
+document.body.appendChild(stars);
 
 const title = document.createElement("h1");
 title.textContent = "🎮 Bem-vindo à HYBE FEST!";
@@ -27,6 +26,14 @@ root.appendChild(intro);
 const input = document.createElement("input");
 input.type = "text";
 input.style.display = "none";
+input.style.fontFamily = "'Press Start 2P', cursive";
+input.style.marginTop = "20px";
+input.style.padding = "10px";
+input.style.fontSize = "14px";
+input.style.width = "300px";
+input.style.backgroundColor = "#222";
+input.style.color = "#fff";
+input.style.border = "2px solid #ff66cc";
 root.appendChild(input);
 
 const button = document.createElement("button");

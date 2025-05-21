@@ -1,13 +1,29 @@
 body {
   margin: 0;
   font-family: 'Press Start 2P', cursive;
-  background: linear-gradient(135deg, #ff66cc, #9966ff);
+  background: black;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-size: cover;
+  overflow: hidden;
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  background: black url('https://raw.githubusercontent.com/Kzonestyle/assets/main/star-bg.gif') repeat;
+  animation: moveStars 100s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 5000px; }
 }
 
 h1, p, button {
@@ -27,9 +43,4 @@ button {
 
 button:hover {
   background-color: #ff99dd;
-}
-
-img.mascot {
-  width: 200px;
-  image-rendering: pixelated;
 }
